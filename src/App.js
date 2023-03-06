@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import HeaderPage from "./component/layout/header/HeaderPage";
+import SideBar from "./component/sidebar/SideBar";
+import Content from "./component/layout/Content";
+import "./App.less";
+import "./App.css";
+import { Space,Row, Col} from "antd";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+       <HeaderPage />
+        <Row style={{justifyContent: 'center',}}>
+          <Row style={{marginTop: '60px', maxWidth: '1150px', width: '100%'}}>
+            <Col span={8}>
+              <SideBar />
+            </Col>
+            <Col span={16} style={{padding: '5px 0 24px 55px'}}>
+              <Content />
+            </Col>
+          </Row>
+        </Row>
+      </>
   );
 }
 

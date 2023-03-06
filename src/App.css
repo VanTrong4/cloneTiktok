@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+[ant-click-animating-without-extra-node='true']::after{display:none;}
+.ant-input-suffix{
+    border-left: solid 1px #ccc;
+    width:52px;
+    height:100%;
+    justify-content: center;
+    font-size: 22px;
+    border-bottom-right-radius: 999px ;
+    border-top-right-radius: 999px ;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-input-suffix:hover{
+    background-color: rgb(228 228 230)
 }
+.ant-input{
+    background-color:transparent;
+    border-radius: 4px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ant-input-affix-wrapper-focused{
+    box-shadow:0 0 0 0.5px rgb(197 198 201);
 }
-
-.App-link {
-  color: #61dafb;
+.ant-btn:focus, .ant-btn:active{
+    color: initial;
+    border-color: initial;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.requestLogin::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: rgb(241 241 242);
+    width: 96%;
+    top: 5px;
+}
+.touch{
+    border-radius: 999px;
+    height: 48px;
+    width: 48px;
+    padding: 12px 0px;
+    background-color: rgb(241 241 242);
+    border: 0;
+    margin-top: 8px;
+    margin-bottom:6px;
+}
+.myvideo:hover{
+    cursor: pointer;
+}
+.play{
+    display: none;
+    position: absolute;
+    bottom: 45px;
+    left: 20px;
+}
+.play:hover{
+    cursor: pointer;
+}
+.volume{
+    position: absolute;
+    bottom: 35px;
+    right: 22px;
+}
+.volumeIconOn{
+    display: none;
+}
+.volumeIconOff:hover, .volumeIconOn:hover{
+    cursor: pointer;
+}
+.content::after{
+    content: "";
+    position: absolute;
+    height:1px;
+    width:97%;
+    background-color: rgb(232 232 234);
+        bottom: -12px;
+}
+.side{
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    perspective-origin: right top;
+    top: 60px;
+    bottom: 0;
+}
+.ant-modal-body{
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btnModal{
+    width:375px;
+    height:42px;
+    padding: 0 12px;
+    position: relative;
+    margin-bottom:16px
+}
+.btnModal span{
+    font-weight:bolder;
+    color: rgb(22, 24, 35)
+}
+.iconModal{
+    position: absolute;
+    left: 12px;
+    font-size:20px
+}
+.ant-modal-footer button{
+    display: none;
+}
+.ant-modal-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:64px;
+}
+.tiktok-1i5fgpz-StyledChevronLeftOffset{
+    position: absolute;
+    top: -27px;
+    left: -66px;
+    font-size: 24px;
+}
+.tiktok-1i5fgpz-StyledChevronLeftOffset:hover{
+    cursor: pointer;
+}
+.inputForm{
+    border-radius: 2px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    padding-inline-start: 12px;
+    color: rgb(22, 24, 35);
+    line-height: 100%;
+    outline: none;
+    font-size: 16px;
+    height: 44px;
+    caret-color: rgb(254, 44, 85);
+    width: 375px;
+    padding-inline-end: unset;
+}
+.notify{
+    border: 0;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
